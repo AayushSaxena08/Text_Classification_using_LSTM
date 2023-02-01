@@ -6,3 +6,4 @@ Text Classification is a process involved in Sentiment Analysis. It is classific
 
 I will go through all the key and fundamental concepts of NLP and Sequence Models, which you will get to learn in this repository.
 
+![pic1](https://user-images.githubusercontent.com/35486320/216017228-ecf48fba-6dac-45af-9ded-87c73b727969.png)
