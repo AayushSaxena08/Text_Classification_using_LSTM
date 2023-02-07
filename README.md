@@ -31,3 +31,29 @@ Twitter is a social media platform where people can tag and mentions other peopl
 Stopwords are commonly used words in English which have no contextual meaning in an sentence. So therefore we remove them before classification. Some stopwords are...
 
 ![pic3](https://user-images.githubusercontent.com/35486320/216248924-9911d867-0d11-499e-8a8f-a6844559d981.png)
+
+### 4. Tokenization
+
+Given a character sequence and a defined document unit, tokenization is the task of chopping it up into pieces, called tokens , perhaps at the same time throwing away certain characters, such as punctuation. The process is called **Tokenization**.
+
+![pic4](https://user-images.githubusercontent.com/35486320/217239796-4d608b98-b108-4b4e-921d-3f18f9e92f89.png)
+
+- `tokenizer` create tokens for every word in the data corpus and map them to a index using dictionary.
+- `word_index` contains the index for each word
+- `vocab_size` represents the total number of word in the data corpus
+
+### 5. Label Encoding
+
+We are building the model to predict class in enocoded form (0 or 1 as this is a binary classification). We should encode our training labels to encodings.
+
+### 6. Word Emdedding
+
+In Language Model, words are represented in a way to intend more meaning and for learning the patterns and contextual meaning behind it.
+
+**Word Embedding** is one of the popular representation of document vocabulary.It is capable of capturing context of a word in a document, semantic and syntactic similarity, relation with other words, etc.
+
+Basically, it's a feature vector representation of words which are used for other natural language processing applications.
+
+We could train the embedding ourselves but that would take a while to train and it wouldn't be effective. So going in the path of Computer Vision, here we use **Transfer Learning**. We download the pre-trained embedding and use it in our model.
+
+The pretrained Word Embedding like **GloVe & Word2Vec** gives more insights for a word which can be used for classification.
